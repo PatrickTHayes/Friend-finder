@@ -1,0 +1,54 @@
+//dummy friends 
+var data=[ //toggled off, not sure how to do this
+ //toggled on
+    {
+      "name":"undecisive",
+      "photo":"http://assets.becomegorgeous.com/assets/static.becomegorgeous.com/img/arts/2013/9/singles-advice-10-reasons-you-re-still-single/gallery_big_undecisive_single_woman.jpg",
+      "scores":[
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+    },
+    {
+      "name":"Disagreeable",
+      "photo":"https://careers.workopolis.com/wp-content/uploads/sites/5/2013/06/fe5d1a8b4eeca6c44a081c25f3ec.jpg",
+      "scores":[
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+    },
+    {
+      "name":"Agreeable",
+      "photo":"https://plum.io/blog/wp-content/uploads/2013/03/jack.png",
+      "scores":[
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+    }
+]
+
+module.exports=data;
