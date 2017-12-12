@@ -7,7 +7,7 @@ var app = express();
 var htmlRoutes = require('./app/routing/htmlRoutes');
 var apiRoutes=require('./app/routing/apiRoutes.js');
 var data = require('./app/data/friends.js');
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 htmlRoutes(app);
 apiRoutes(app);
 
