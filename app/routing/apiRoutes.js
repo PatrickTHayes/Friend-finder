@@ -16,17 +16,20 @@ function apiRoutes(app) {
       // req.body hosts is equal to the JSON post sent from the user
       // This works because of our body-parser middleware
       var newfriend = req.body;
+      newfriend.scores=newfriend['scores[]'];
+      //var test=JSON.parse(newfriend);
+      //console.log(test);
 
       console.log(newfriend);
       console.log(data);
       var leastDif=41; //set higher than a perfectly different person could be
       for(var i=0;i<data.length;i++){ //loop through friends
-          console.log("inside for loop for friends")
-          console.log()
+
           var sum=0
           for (var j=0;j<data[i].scores.length;j++){//for each friend loop through scores
               sum = sum + Math.abs(newfriend['scores[]'][j]-data[i].scores[j]); //absolute sum
           }
+          console.log("inside for loop for friends at iteration: "+i+" and the sum is: "+ sum);
           if (sum < leastDif){//use least sum to evaluate differences between friends. keep whoever is least different
               leastDif=sum;
               var closestPersonPosition=i; //stores array value of least different person
