@@ -1,0 +1,26 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "basic full stack app. express and node servers. ask user to fill out a server, compare answers of prior users, return most similar user.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "npm-path": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickTHayes/Friend-finder.git"
+  },
+  "author": "pat H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickTHayes/Friend-finder/issues"
+  },
+  "homepage": "https://github.com/PatrickTHayes/Friend-finder#readme"
+}
